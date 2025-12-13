@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.12.3 on linux)" generated="2025-12-08T23:50:39.325737" rpa="false" schemaversion="5">
+<suite id="s1" name="01-Premier-Test" source="/home/che/Documents/qa-auto/01-premier-test.robot">
+<test id="s1-t1" name="Mon Premier test RF" line="5">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-12-08T23:50:39.375176" level="INFO">Hello, je suis un QA senior qui passe à l'auto!</msg>
+<arg>Hello, je suis un QA senior qui passe à l'auto!</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-12-08T23:50:39.374550" elapsed="0.000768"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-12-08T23:50:39.375797" level="INFO">Robot Framework est lancé sur ma machine Ubuntu</msg>
+<arg>Robot Framework est lancé sur ma machine Ubuntu</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-12-08T23:50:39.375603" elapsed="0.000279"/>
+</kw>
+<status status="PASS" start="2025-12-08T23:50:39.373310" elapsed="0.002812"/>
+</test>
+<status status="PASS" start="2025-12-08T23:50:39.327367" elapsed="0.049367"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="01-Premier-Test" id="s1" pass="1" fail="0" skip="0">01-Premier-Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
