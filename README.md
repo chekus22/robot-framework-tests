@@ -2,7 +2,7 @@
 
 ## 👨‍💻 À propos
 Portfolio de tests automatisés démontrant mes compétences en automatisation QA.  
-**Réalisé en décembre 2024** dans le cadre de ma montée en compétences sur Robot Framework.
+**Projet personnel initié en décembre 2024** et enrichi continuellement.
 
 ## 📂 Contenu du repository
 ### Tests Web
@@ -34,3 +34,6 @@ robot tests/web/
 # Lancer les tests API
 robot tests/api/
 ```
+
+---
+💼 **Cheick DOUCOURE** - Ingénieur QA Senior | https://www.linkedin.com/in/vier-d-392840369/
