@@ -1,22 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.12.3 on linux)" generated="2025-12-08T23:50:39.325737" rpa="false" schemaversion="5">
-<suite id="s1" name="01-Premier-Test" source="/home/che/Documents/qa-auto/01-premier-test.robot">
-<test id="s1-t1" name="Mon Premier test RF" line="5">
-<kw name="Log" owner="BuiltIn">
-<msg time="2025-12-08T23:50:39.375176" level="INFO">Hello, je suis un QA senior qui passe à l'auto!</msg>
-<arg>Hello, je suis un QA senior qui passe à l'auto!</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-12-08T23:50:39.374550" elapsed="0.000768"/>
+<robot generator="Robot 7.3.2 (Python 3.12.3 on linux)" generated="2025-12-18T21:16:19.009084" rpa="false" schemaversion="5">
+<suite id="s1" name="14-Mcp-Generated" source="/home/che/Documents/qa-auto/14-mcp-generated.robot">
+<test id="s1-t1" name="Vérifier login réussi" line="21">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-12-18T21:16:19.223274" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/login'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-12-18T21:16:19.222994" elapsed="44.571400"/>
 </kw>
-<kw name="Log" owner="BuiltIn">
-<msg time="2025-12-08T23:50:39.375797" level="INFO">Robot Framework est lancé sur ma machine Ubuntu</msg>
-<arg>Robot Framework est lancé sur ma machine Ubuntu</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-12-08T23:50:39.375603" elapsed="0.000279"/>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-12-18T21:17:03.795229" elapsed="0.070454"/>
 </kw>
-<status status="PASS" start="2025-12-08T23:50:39.373310" elapsed="0.002812"/>
+<kw name="Login To Application">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-12-18T21:17:03.867564" level="INFO">Opening url 'https://the-internet.herokuapp.com/login'</msg>
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-12-18T21:17:03.867270" elapsed="0.236185"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-18T21:17:04.104042" level="INFO">Typing text 'tomsmith' into text field 'id=username'.</msg>
+<arg>id=username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-18T21:17:04.103636" elapsed="0.110638"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-12-18T21:17:04.214817" level="INFO">Typing password into text field 'id=password'.</msg>
+<msg time="2025-12-18T21:17:04.253153" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>id=password</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-18T21:17:04.214486" elapsed="0.092244"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-12-18T21:17:04.307110" level="INFO">Clicking element '//button[@type="submit"]'.</msg>
+<arg>//button[@type="submit"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-18T21:17:04.306906" elapsed="0.087284"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${SUCCESS_MESSAGE}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-12-18T21:17:04.394447" elapsed="0.296167"/>
+</kw>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+<status status="PASS" start="2025-12-18T21:17:03.866452" elapsed="0.824340"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-12-18T21:17:04.702912" level="INFO">Current page contains text 'You logged into a secure area!'.</msg>
+<arg>${SUCCESS_MESSAGE}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-12-18T21:17:04.691054" elapsed="0.012008"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-12-18T21:17:04.703557" elapsed="0.136489"/>
+</kw>
+<status status="PASS" start="2025-12-18T21:16:19.222193" elapsed="45.618036"/>
 </test>
-<status status="PASS" start="2025-12-08T23:50:39.327367" elapsed="0.049367"/>
+<status status="PASS" start="2025-12-18T21:16:19.010868" elapsed="45.829988"/>
 </suite>
 <statistics>
 <total>
@@ -25,7 +71,7 @@
 <tag>
 </tag>
 <suite>
-<stat name="01-Premier-Test" id="s1" pass="1" fail="0" skip="0">01-Premier-Test</stat>
+<stat name="14-Mcp-Generated" id="s1" pass="1" fail="0" skip="0">14-Mcp-Generated</stat>
 </suite>
 </statistics>
 <errors>
